@@ -49,6 +49,22 @@ DoTheReco AI는 사용자의 고정 일정과 유동 일정을 기반으로
 
 ---
 
+## 🤖 AI 추천 방식
+
+자연어 요청과 위치 기반 동선을 함께 고려하여
+추천 전략을 동적으로 변경합니다.
+
+* 이동 최소화 기반 장소 추천
+* 여유시간(buffer) 기반 일정 조정
+* 마감일(D-Day) 우선 일정 배치
+* 현재 위치(currentPlace) 기반 동선 연결
+
+자세한 추천 로직은
+[AI Recommendation Docs](./docs/ai-recommendation.md)
+에서 확인할 수 있습니다.
+
+---
+
 ## 🛠️ 기술 스택
 
 ### Frontend
