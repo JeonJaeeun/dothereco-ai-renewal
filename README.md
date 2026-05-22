@@ -1,0 +1,121 @@
+# 🗓️ DoTheReco AI
+
+AI 기반 위치/동선 최적화 일정 추천 서비스
+
+## 📌 프로젝트 소개
+
+DoTheReco AI는 사용자의 고정 일정과 유동 일정을 기반으로
+빈 시간, 이동 거리, 예상 소요 시간, 자연어 요청을 함께 고려하여
+하루 일정을 자동 추천하는 AI 일정 추천 서비스입니다.
+
+단순 캘린더 기능을 넘어,
+현재 위치와 다음 일정 사이의 이동 동선을 최소화하도록
+유동 일정의 장소를 추천하는 기능을 구현했습니다.
+
+---
+
+## ✨ 핵심 기능
+
+### 🤖 AI 자연어 일정 추천
+
+사용자의 자연어 요청을 분석하여 추천 전략에 반영합니다.
+
+예시:
+
+* "이동이 적은 순서로 짜줘"
+* "오늘 피곤해서 여유롭게 넣어줘"
+* "마감 가까운 일정 먼저 추천해줘"
+
+---
+
+### 📍 위치 기반 일정 추천
+
+현재 위치와 다음 고정 일정을 기준으로
+이동 동선을 최소화하는 장소를 추천합니다.
+
+예시:
+
+* 건대 일정 이후 → 건대 근처 카페 추천
+* 강남 일정 이후 → 강남역 주변 일정 추천
+
+---
+
+### ⏰ 고정 / 유동 일정 혼합 스케줄링
+
+* 고정 일정(Fixed Schedule)
+* 유동 일정(Flexible Task)
+
+을 함께 분석하여 자동 타임라인을 생성합니다.
+
+---
+
+## 🛠️ 기술 스택
+
+### Frontend
+
+* React Native
+* Expo
+* TypeScript
+* Expo Router
+
+### Backend
+
+* Node.js
+* Express
+* Prisma ORM
+* SQLite
+
+### API / AI
+
+* OpenAI API
+* Naver Search API
+
+---
+
+## 📂 프로젝트 구조
+
+```bash
+dothereco-ai-renewal
+├── frontend   # Expo Frontend
+├── backend    # Express + Prisma Backend
+```
+
+---
+
+## 🚀 실행 방법
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npx expo start
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+---
+
+## 🔍 주요 구현 내용
+
+* 고정 일정 사이 빈 시간 계산
+* 이동 거리 기반 일정 추천
+* currentPlace 기반 동선 연결
+* 지역 키워드 기반 장소 검색 최적화
+* AI 자연어 요청 분석
+* 추천 결과 DB 저장
+
+---
+
+## 📈 향후 개선 예정
+
+* 실제 경로 기반 이동 시간 계산
+* 전체 경로 최적화 알고리즘
+* 사용자 루틴 기반 AI 추천
+* 일정 추천 시각화
