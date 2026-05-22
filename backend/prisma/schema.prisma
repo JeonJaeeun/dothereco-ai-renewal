@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model FixedSchedule {
+  id        Int      @id @default(autoincrement())
+  date      String
+  time      String
+  endTime   String?
+  title     String
+  place     String
+  tag       String
+  type      String   @default("fixed")
+  color     String?
+  textColor String?
+  lat       Float?
+  lng       Float?
+  createdAt DateTime @default(now())
+}
+
+model FlexibleTask {
+  id              Int      @id @default(autoincrement())
+  title           String
+  selected        Boolean  @default(false)
+  tag             String
+  dday            String?
+  durationMinutes Int?
+  priority        String?
+  placeMode       String?
+  placeKeyword    String?
+  place           String?
+  completed       Boolean  @default(false)
+  color           String?
+  textColor       String?
+  lat             Float?
+  lng             Float?
+  createdAt       DateTime @default(now())
+}
+
+model Recommendation {
+  id        Int      @id @default(autoincrement())
+  request   String?
+  strategy  String
+  summary   String
+  timeline  String
+  reasons   String
+  createdAt DateTime @default(now())
+}

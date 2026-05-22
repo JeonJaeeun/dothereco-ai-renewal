@@ -1,0 +1,15 @@
+node_modules
+# Keep environment variables out of version control
+
+# env
+.env
+
+# prisma
+/src/generated/prisma
+
+# sqlite
+dev.db
+prisma/dev.db
+
+# mac
+.DS_Store
