@@ -70,17 +70,69 @@ DoTheReco AI는 사용자의 고정 일정과 유동 일정을 기반으로
 
 ## 📱 Screenshots
 
-### 타임라인 화면
+### 🕒 타임라인 화면
 
-(추후 이미지 추가 예정)
+AI 추천 결과 기반으로
+고정 일정과 유동 일정을 자동 배치한 타임라인 화면입니다.
 
-### AI 추천 결과 화면
+<img width="260" src="./docs/screenshots/timeline.png" />
 
-(추후 이미지 추가 예정)
+---
 
-### 유동 일정 선택 화면
+### ✨ 유동 일정 선택 화면
 
-(추후 이미지 추가 예정)
+추천받고 싶은 유동 일정을 선택할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/select-flexible.png" />
+
+---
+
+### 🤖 AI 추천 요청 화면
+
+자연어 요청을 통해
+추천 방향(이동 최소화, 마감 우선 등)을 설정할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/ai-request.png" />
+
+---
+
+### ⏳ 추천 생성 화면
+
+AI 추천 생성 중 로딩 화면입니다.
+
+<img width="260" src="./docs/screenshots/loading.png" />
+
+---
+
+### 📅 캘린더 화면
+
+날짜별 고정 스케줄을 확인할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/calendar.png" />
+
+---
+
+### ✅ 할 일 관리 화면
+
+유동 스케줄의 완료 여부와 남은 일정을 관리할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/todo.png" />
+
+---
+
+### ➕ 유동 일정 추가 화면
+
+유동 일정의 예상 소요 시간, 중요도, 카테고리 등을 설정할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/add-task.png" />
+
+---
+
+### 📍 장소 검색 화면
+
+장소 키워드 기반으로 추천 장소를 검색할 수 있습니다.
+
+<img width="260" src="./docs/screenshots/place-search.png" />
 
 ---
 
